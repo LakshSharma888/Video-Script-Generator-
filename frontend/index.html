@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Script Generator</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="header-left">Claude</div>
+            <div class="header-right">
+                <a href="#" class="professional-plan">Professional Plan</a>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="greeting">
+                <span class="sun-icon">☀️</span>
+                <h1>Good afternoon, Prakash</h1>
+            </div>
+
+            <div class="chat-container">
+                <div class="input-area">
+                    <div class="model-selector">
+                        <select id="modelSelect" class="model-dropdown">
+                            <option value="claude-3.5">Claude 3.5 Sonnet</option>
+                        </select>
+                        <select id="styleSelect" class="style-dropdown">
+                            <option value="default">Choose style</option>
+                        </select>
+                    </div>
+
+                    <textarea 
+                        id="promptInput" 
+                        placeholder="How can Claude help you today?"
+                        class="prompt-input"
+                    ></textarea>
+
+                    <div class="quick-actions">
+                        <button class="action-btn">
+                            <span class="icon">📝</span>
+                            Write a memo
+                        </button>
+                        <button class="action-btn">
+                            <span class="icon">📋</span>
+                            Summarize meeting notes
+                        </button>
+                        <button class="action-btn">
+                            <span class="icon">📊</span>
+                            Generate excel formulas
+                        </button>
+                    </div>
+                </div>
+
+                <div class="notification">
+                    <div class="notification-content">
+                        <span class="new-tag">NEW</span>
+                        Try Google Docs in Claude and Projects
+                        <button class="close-btn">×</button>
+                    </div>
+                    <p class="notification-desc">
+                        Connect your Google Docs directly to Claude to provide additional context for your conversations.
+                        <a href="#" class="try-it-link">Try it out</a>
+                    </p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
